@@ -28,7 +28,7 @@ import logging
 import sys
 from logging import Handler, Formatter
 import six
-from theano.compat.six.moves import xrange
+from six.moves import xrange
 
 
 class CustomFormatter(Formatter):

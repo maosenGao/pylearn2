@@ -3,12 +3,14 @@
 
     WRITEME
 """
+import sys
+sys.path.append("C:\Programdata\Anaconda3\lib\site-packages")
 import logging
 import warnings
 
 from .general import is_iterable, contains_nan, contains_inf, isfinite
 import theano
-from theano.compat.six.moves import input, zip as izip
+from six.moves import input, zip as izip
 # Delay import of pylearn2.config.yaml_parse and pylearn2.datasets.control
 # to avoid circular imports
 yaml_parse = None
@@ -16,7 +18,7 @@ control = None
 cuda = None
 
 import numpy as np
-from theano.compat import six
+import six
 
 from functools import partial
 
